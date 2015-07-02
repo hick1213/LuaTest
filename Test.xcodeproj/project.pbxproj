@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADBEFFBF1B45652600D56CFA /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBEFFB51B45652600D56CFA /* libluajit.a */; };
 		ADDF1A071B455FB0006541EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A061B455FB0006541EB /* main.m */; };
 		ADDF1A0A1B455FB0006541EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A091B455FB0006541EB /* AppDelegate.m */; };
-		ADDF1A0D1B455FB0006541EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A0C1B455FB0006541EB /* ViewController.m */; };
 		ADDF1A101B455FB0006541EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDF1A0E1B455FB0006541EB /* Main.storyboard */; };
 		ADDF1A121B455FB0006541EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDF1A111B455FB0006541EB /* Images.xcassets */; };
 		ADDF1A151B455FB0006541EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDF1A131B455FB0006541EB /* LaunchScreen.xib */; };
 		ADDF1A211B455FB0006541EB /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A201B455FB0006541EB /* TestTests.m */; };
+		ADDF1A3F1B4560F8006541EB /* main.lua in Resources */ = {isa = PBXBuildFile; fileRef = ADDF1A3E1B4560F8006541EB /* main.lua */; };
+		ADDF1A421B456124006541EB /* LuaBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A401B456124006541EB /* LuaBridge.mm */; };
+		ADDF1A441B45616D006541EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A431B45616D006541EB /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADBEFFA71B45652600D56CFA /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		ADBEFFA81B45652600D56CFA /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		ADBEFFA91B45652600D56CFA /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		ADBEFFAA1B45652600D56CFA /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		ADBEFFB51B45652600D56CFA /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libluajit.a; sourceTree = "<group>"; };
 		ADDF1A011B455FB0006541EB /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDF1A051B455FB0006541EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADDF1A061B455FB0006541EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADDF1A081B455FB0006541EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADDF1A091B455FB0006541EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ADDF1A0B1B455FB0006541EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ADDF1A0C1B455FB0006541EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ADDF1A0F1B455FB0006541EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADDF1A111B455FB0006541EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ADDF1A141B455FB0006541EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ADDF1A1A1B455FB0006541EB /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDF1A1F1B455FB0006541EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADDF1A201B455FB0006541EB /* TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTests.m; sourceTree = "<group>"; };
+		ADDF1A3E1B4560F8006541EB /* main.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.lua; sourceTree = "<group>"; };
+		ADDF1A401B456124006541EB /* LuaBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LuaBridge.mm; sourceTree = "<group>"; };
+		ADDF1A411B456124006541EB /* LuaBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaBridge.h; sourceTree = "<group>"; };
+		ADDF1A431B45616D006541EB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBEFFBF1B45652600D56CFA /* libluajit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +72,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADBEFFA51B45652600D56CFA /* luajit */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEFFA61B45652600D56CFA /* include */,
+				ADBEFFAB1B45652600D56CFA /* prebuilt */,
+			);
+			path = luajit;
+			sourceTree = "<group>";
+		};
+		ADBEFFA61B45652600D56CFA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEFFA71B45652600D56CFA /* lauxlib.h */,
+				ADBEFFA81B45652600D56CFA /* lua.h */,
+				ADBEFFA91B45652600D56CFA /* luaconf.h */,
+				ADBEFFAA1B45652600D56CFA /* lualib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		ADBEFFAB1B45652600D56CFA /* prebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEFFB41B45652600D56CFA /* ios */,
+			);
+			path = prebuilt;
+			sourceTree = "<group>";
+		};
+		ADBEFFB41B45652600D56CFA /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				ADBEFFB51B45652600D56CFA /* libluajit.a */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
 		ADDF19F81B455FB0006541EB = {
 			isa = PBXGroup;
 			children = (
+				ADBEFFA51B45652600D56CFA /* luajit */,
+				ADDF1A3D1B4560F8006541EB /* Resources */,
 				ADDF1A031B455FB0006541EB /* Test */,
 				ADDF1A1D1B455FB0006541EB /* TestTests */,
 				ADDF1A021B455FB0006541EB /* Products */,
@@ -81,10 +131,12 @@
 		ADDF1A031B455FB0006541EB /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				ADDF1A431B45616D006541EB /* ViewController.m */,
+				ADDF1A401B456124006541EB /* LuaBridge.mm */,
+				ADDF1A411B456124006541EB /* LuaBridge.h */,
 				ADDF1A081B455FB0006541EB /* AppDelegate.h */,
 				ADDF1A091B455FB0006541EB /* AppDelegate.m */,
 				ADDF1A0B1B455FB0006541EB /* ViewController.h */,
-				ADDF1A0C1B455FB0006541EB /* ViewController.m */,
 				ADDF1A0E1B455FB0006541EB /* Main.storyboard */,
 				ADDF1A111B455FB0006541EB /* Images.xcassets */,
 				ADDF1A131B455FB0006541EB /* LaunchScreen.xib */,
@@ -117,6 +169,14 @@
 				ADDF1A1F1B455FB0006541EB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADDF1A3D1B4560F8006541EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADDF1A3E1B4560F8006541EB /* main.lua */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADDF1A101B455FB0006541EB /* Main.storyboard in Resources */,
+				ADDF1A3F1B4560F8006541EB /* main.lua in Resources */,
 				ADDF1A151B455FB0006541EB /* LaunchScreen.xib in Resources */,
 				ADDF1A121B455FB0006541EB /* Images.xcassets in Resources */,
 			);
@@ -219,9 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDF1A0D1B455FB0006541EB /* ViewController.m in Sources */,
 				ADDF1A0A1B455FB0006541EB /* AppDelegate.m in Sources */,
 				ADDF1A071B455FB0006541EB /* main.m in Sources */,
+				ADDF1A441B45616D006541EB /* ViewController.m in Sources */,
+				ADDF1A421B456124006541EB /* LuaBridge.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +411,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DYLIB_INSTALL_NAME_BASE = "";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/luajit/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +433,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DYLIB_INSTALL_NAME_BASE = "";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/luajit/prebuilt/ios",
+				);
+				OTHER_LDFLAGS = (
+					"-pagezero_size",
+					10000,
+					"-image_base",
+					100000000,
+				);
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +504,7 @@
 				ADDF1A261B455FB0006541EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADDF1A271B455FB0006541EB /* Build configuration list for PBXNativeTarget "TestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +513,7 @@
 				ADDF1A291B455FB0006541EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

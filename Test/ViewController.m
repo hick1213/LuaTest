@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  Test
+//  TestLua
 //
-//  Created by fengxiao on 15/7/2.
+//  Created by fengxiao on 15/6/30.
 //  Copyright (c) 2015年 hick. All rights reserved.
 //
 
 #import "ViewController.h"
+#include "LuaBridge.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    initLuaEngine();
     // Do any additional setup after loading the view, typically from a nib.
 }
 
