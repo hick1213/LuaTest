@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4E81621B457D7500F34530 /* test.lua in Resources */ = {isa = PBXBuildFile; fileRef = AD4E81611B457D7500F34530 /* test.lua */; };
 		ADBEFFBF1B45652600D56CFA /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBEFFB51B45652600D56CFA /* libluajit.a */; };
 		ADDF1A071B455FB0006541EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A061B455FB0006541EB /* main.m */; };
 		ADDF1A0A1B455FB0006541EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDF1A091B455FB0006541EB /* AppDelegate.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD4E81611B457D7500F34530 /* test.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.lua; sourceTree = "<group>"; };
 		ADBEFFA71B45652600D56CFA /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
 		ADBEFFA81B45652600D56CFA /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		ADBEFFA91B45652600D56CFA /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		ADDF1A3D1B4560F8006541EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AD4E81611B457D7500F34530 /* test.lua */,
 				ADDF1A3E1B4560F8006541EB /* main.lua */,
 			);
 			path = Resources;
@@ -259,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4E81621B457D7500F34530 /* test.lua in Resources */,
 				ADDF1A101B455FB0006541EB /* Main.storyboard in Resources */,
 				ADDF1A3F1B4560F8006541EB /* main.lua in Resources */,
 				ADDF1A151B455FB0006541EB /* LaunchScreen.xib in Resources */,

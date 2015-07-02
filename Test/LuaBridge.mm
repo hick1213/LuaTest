@@ -24,21 +24,32 @@ void initLua(lua_State *L)
     luaopen_math(L);
 }
 
-
+void initLuaPath(lua_State *L)
+{
+    lua_getglobal(L, "package");
+    lua_getfield(L, -1, "path");
+    const char* cur_path = lua_tostring(L, -1);
+    lua_pushfstring(L, "%s;%s/?.lua",cur_path,[[[NSBundle mainBundle] resourcePath] UTF8String]);
+    lua_setfield(L, -3, "path");
+    lua_pop(L, 2);
+}
+    
+    
 void initLuaEngine()
 {
     lua_State* L = luaL_newstate();
     initLua(L);
-    int ret = luaL_loadfile(L, "main.lua");
+    initLuaPath(L);
+    NSString *file = [NSString stringWithFormat:@"%@/%s",[[NSBundle mainBundle] resourcePath],"main.lua" ];
+    int ret = luaL_loadfile(L,[file UTF8String]);
     if(ret != 0)
     {
-        NSLog(@"error");
+        NSLog(@"error %d",ret);
         return;
     }
     lua_pcall(L, 0, 0, 0);
     
 }
-
 
 
 };
